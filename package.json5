@@ -1,0 +1,43 @@
+{
+  "name": "@ronbravo/nethack-game",
+  "version": "1.0.0",
+  "description": "A game based on the nethack game built for learning web development concepts.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Ron Bravo",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "npx nodemon --exec \"node src/js/server/index.js\" --watch src/js/server",
+    "dev:test": "nodemon --exec \"pnpm run test\" --watch \"module\" --watch \"index.spec.js\" ",
+    "dev:test:coverage": "nodemon --exec \"pnpm run test:coverage\" --watch \"module\" --watch \"index.spec.js\" ",
+    "modlink": "pnpm link --global @tamedjs/tm-console",
+    "test": "mocha index.spec.js --reporter=min",
+    "test:coverage": "c8 mocha index.spec.js --reporter=min"
+  },
+  "c8": {
+    "exclude": [
+      "**/*.spec.js",
+      "**/index.js",
+      "**/index.browser.js",
+      "**/index.common.js",
+      "**/index.server.js"
+    ]
+  },
+  "nodemonConfig": {
+    "events": {
+      "start": "tput reset",
+      "_start": "reset"
+    }
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "restana": "^4.9.7"
+  },
+  "devDependencies": {
+    "c8": "^8.0.1",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1"
+  }
+}
