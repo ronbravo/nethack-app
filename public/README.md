@@ -19,8 +19,8 @@ For example, if a project needs to make the `https://myproject.com/api` route av
 
 **NOTE:** these are only available if `tm-server` is run in `dev` mode.
 
-- `/dev`
-- `/ide`
+- `/dev` - Path to the project
+- `/ide` - Path to the frontend code editor built with brackets
 - `/storage` - access a storage system (ex: mysql, mongo, or arrangodb server)
 
 With this configuration a project can define which reserved directories should be visible to the public or not.

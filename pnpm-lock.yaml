@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@tamedjs/tm':
+    specifier: ^0.1.0
+    version: 0.1.0
   fs-extra:
     specifier: ^11.1.1
     version: 11.1.1
@@ -61,6 +64,11 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
+
+  /@tamedjs/tm@0.1.0:
+    resolution: {integrity: sha512-vr3iTICJ0NCaWfeGmTogDn3MBj7/cQyWNDft9WPtveC23FtgCKMOdJgT+GYk1Cyi8+k886y3fMyJSzGLMa5MJg==}
+    hasBin: true
+    dev: false
 
   /@types/istanbul-lib-coverage@2.0.5:
     resolution: {integrity: sha512-zONci81DZYCZjiLe0r6equvZut0b+dBRPBN5kBDjsONnutYNtJMoWQ9uR2RkL1gLG9NMTzvf+29e5RFfPbeKhQ==}
