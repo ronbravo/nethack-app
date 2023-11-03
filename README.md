@@ -1,5 +1,7 @@
 # Nethack Game
 
+**NOTE:** This documentation is a work in progress so some of the content may change without notice.
+
 A game based on the nethack game built for learning web development concepts.
 
 In many of the directories of the project are found `README.md` files (ex: `/public/README.md`). These help to document the structure, coding style, and concepts / ideas behind the project. This all can be used as a reference to help guide you in your own projects.
