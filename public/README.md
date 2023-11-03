@@ -13,10 +13,10 @@ For example, if a project needs to make the `https://myproject.com/api` route av
 - `/api` - allow for api routes managed through `tm-server`
 - `/content` - deliever of static content (ex: images, text files, audio, styes, etc)
 - `/library` - access to packages bundled for distribution usually through a bundler (ex: tm-server, npm, webpack, rollup, vitejs, etc)
-- `/style` - access a css theme
+- `/theme` - access a css theme
   - ex:
-    - `/style/tamedjs/basic`,
-    - `/style/uikit`,
+    - `/theme/tamedjs/basic`,
+    - `/theme/uikit`,
 - `/status` - get information about the `tm-server` that is running
 - `/cache` - for storing cached files.
   - Typically used for 3rd party files to be cached
